@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales", "Demo02\Sales\Sales
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo01.Basics", "Demo01.Basics", "{90BCE913-10AE-474C-91C0-9C56F654256B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo02.Comand Processing", "Demo02.Comand Processing", "{7A2ACDF3-1C93-419A-B321-2DCE3074118D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo02.Command Processing", "Demo02.Command Processing", "{7A2ACDF3-1C93-419A-B321-2DCE3074118D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientUI", "Demo01\ClientUI\ClientUI.csproj", "{BAD2D070-1E40-4E06-BF7B-0F65D8954EF6}"
 EndProject
