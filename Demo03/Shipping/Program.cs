@@ -2,17 +2,17 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Demo02.Sales
+namespace Shipping
 {
     class Program
     {
         static async Task Main(string[] args)
         {
-            Console.Title = "Sales";
+            Console.Title = "Shipping";
 
             // Endpoint is a component with send/receive capabilities
             // Each endpoint need a name that identify it
-            var endpointConfiguration = new EndpointConfiguration("Demo02.Sales");
+            var endpointConfiguration = new EndpointConfiguration("Dem03.Shipping");
 
             // Learing transport is for begginers
             // NSserviceBus Create fake, file-based "queues" in a.learningtransport directory inside solution directory. 

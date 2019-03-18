@@ -4,8 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <LangVersion>7.3</LangVersion>
-    <AssemblyName>Demo02.Sales</AssemblyName>
-    <RootNamespace>Demo02.Sales</RootNamespace>
+    <RootNamespace>Demo03.ClientUI</RootNamespace>
+    <AssemblyName>Demo03.ClientUI</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

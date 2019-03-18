@@ -1,0 +1,1 @@
+<?xml version="1.0"?><OrderPlaced xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.net/Demo03.Messages.Events"><OrderId>05ead384-a53e-4fc3-8f0a-0a1f551518f1</OrderId></OrderPlaced>

@@ -1,4 +1,5 @@
-﻿using Demo02.Messages.Commands;
+﻿using Demo03.Messages.Commands;
+using Demo03.Messages.Events;
 using NServiceBus;
 using NServiceBus.Logging;
 using System;
@@ -6,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo02.Sales.Handlers
+namespace Demo03.Sales.Handlers
 {
     public class PlaceOrderHandler : IHandleMessages<PlaceOrder>
     {
@@ -16,7 +17,11 @@ namespace Demo02.Sales.Handlers
         public Task Handle(PlaceOrder message, IMessageHandlerContext context)
         {
             log.Info($"Received PlaceOrder, OrderId = {message.OrderId}");
-            return Task.CompletedTask;            
+
+            var orderPlaced = new OrderPlaced() { OrderId = message.OrderId };
+
+            //Thisnis teh way to publich an event inside a handler
+            return context.Publish(orderPlaced);
         }
     }
 }

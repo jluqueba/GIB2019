@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Demo02.Sales
+namespace Demo03.Sales
 {
     class Program
     {
@@ -12,7 +12,7 @@ namespace Demo02.Sales
 
             // Endpoint is a component with send/receive capabilities
             // Each endpoint need a name that identify it
-            var endpointConfiguration = new EndpointConfiguration("Demo02.Sales");
+            var endpointConfiguration = new EndpointConfiguration("Dem03.Sales");
 
             // Learing transport is for begginers
             // NSserviceBus Create fake, file-based "queues" in a.learningtransport directory inside solution directory. 

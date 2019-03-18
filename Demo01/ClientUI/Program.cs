@@ -19,7 +19,7 @@ namespace Demo01.ClientUI
 
             // Endpoint is a component with send/receive capabilities
             // Each endpoint need a name that identify it
-            var endpointConfiguration = new EndpointConfiguration("ClientUI");
+            var endpointConfiguration = new EndpointConfiguration("Demo01.ClientUI");
 
             // Learing transport is for begginers
             // NSserviceBus Create fake, file-based "queues" in a.learningtransport directory inside solution directory. 
