@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo03.Shipping.Handlers
+namespace Demo04.Shipping.Handlers
 {
     public class OrderBilledHandler : IHandleMessages<OrderBilled>
     {

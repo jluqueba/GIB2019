@@ -4,7 +4,7 @@ using NServiceBus.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace Demo03.ClientUI
+namespace Demo04.ClientUI
 {
     class Program
     {
@@ -19,7 +19,7 @@ namespace Demo03.ClientUI
 
             // Endpoint is a component with send/receive capabilities
             // Each endpoint need a name that identify it
-            var endpointConfiguration = new EndpointConfiguration("Dem03.ClientUI");
+            var endpointConfiguration = new EndpointConfiguration("Dem04.ClientUI");
 
             // Learing transport is for begginers
             // NSserviceBus Create fake, file-based "queues" in a.learningtransport directory inside solution directory. 
@@ -27,7 +27,7 @@ namespace Demo03.ClientUI
 
             //Specifiy that PlaceOrder must be send to Sales endpoint
             var routing = transport.Routing();
-            routing.RouteToEndpoint(typeof(PlaceOrder), "Dem03.Sales");
+            routing.RouteToEndpoint(typeof(PlaceOrder), "Dem04.Sales");
 
             // Endpoint need to start process
             // Use Configure wait in order to avoid capturing ans restoring Context 

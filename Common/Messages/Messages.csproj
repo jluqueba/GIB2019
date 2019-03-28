@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>Demo01.Messages</RootNamespace>
-    <AssemblyName>Demo01.Messages</AssemblyName>
+    <RootNamespace>Messages</RootNamespace>
+    <AssemblyName>Messages</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

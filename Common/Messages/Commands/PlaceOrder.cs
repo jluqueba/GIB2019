@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Demo02.Messages.Commands
+namespace Messages.Commands
 {
     public class PlaceOrder : ICommand
     {

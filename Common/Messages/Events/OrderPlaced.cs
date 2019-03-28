@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Demo01.Messages.Commands
+namespace Messages.Events
 {
-    public class PlaceOrder : ICommand
+    public class OrderPlaced : IEvent
     {
         public string OrderId { get; set; }
     }

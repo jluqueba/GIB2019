@@ -6,15 +6,15 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo03.Shipping.Handlers
+namespace Demo04.Shipping.Handlers
 {
-    public class OrderBilledHandler : IHandleMessages<OrderBilled>
+    public class OrderPlacedHandler : IHandleMessages<OrderPlaced>
     {
         static ILog log = LogManager.GetLogger<OrderPlacedHandler>();
 
-        public Task Handle(OrderBilled message, IMessageHandlerContext context)
+        public Task Handle(OrderPlaced message, IMessageHandlerContext context)
         {
-            log.Info($"Received OrderBilled, OrderId = {message.OrderId} - Should we ship now?...");
+            log.Info($"Received OrderPlaced, OrderId = {message.OrderId} - Charging credit card...");
 
             return Task.CompletedTask;
         }

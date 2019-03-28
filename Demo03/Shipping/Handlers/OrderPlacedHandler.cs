@@ -1,4 +1,4 @@
-﻿using Demo03.Messages.Events;
+﻿using Messages.Events;
 using NServiceBus;
 using NServiceBus.Logging;
 using System;
