@@ -26,8 +26,8 @@ namespace Demo04.Sales.Handlers
             //throw new Exception("BOOM");
 
             // This is a transient exception %20 probabilities
-            if (random.Next(0,5) == 0)
-                throw new Exception("BOOM");
+            //if (random.Next(0,5) == 0)
+                //throw new Exception("BOOM");
 
             var orderPlaced = new OrderPlaced() { OrderId = message.OrderId };
 
