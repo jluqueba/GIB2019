@@ -2,17 +2,31 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Demo03.Shipping
+namespace Demo05.Sales
 {
     class Program
     {
         static async Task Main(string[] args)
         {
-            Console.Title = "Shipping";
+            Console.Title = "Sales";
 
             // Endpoint is a component with send/receive capabilities
             // Each endpoint need a name that identify it
-            var endpointConfiguration = new EndpointConfiguration("Dem03.Shipping");
+            var endpointConfiguration = new EndpointConfiguration("Dem05.Sales");
+
+            // Configure recoverability
+            var recoverability = endpointConfiguration.Recoverability();
+
+            // In DEV mode for better debugging
+            //recoverability.Immediate(options => options.NumberOfRetries(0)); 
+            //recoverability.Delayed(options => 
+            //{
+            //    options.NumberOfRetries(0);
+            //    options.TimeIncrease(TimeSpan.FromMinutes(0));
+            //});
+            
+            // Even with custom policy
+            //recoverability.CustomPolicy(Policies.MyCustomRetriesPolicies.MyCustomRetryPolicy);
 
             // Learing transport is for begginers
             // NSserviceBus Create fake, file-based "queues" in a.learningtransport directory inside solution directory. 
