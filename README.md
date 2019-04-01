@@ -1,17 +1,23 @@
 # GIB2019
-Demos viewed in GIB2019 event
+Demos vistas en el GIB2019
 
 ## Demo01. Basics
-Includes basic configuratoion and send local commands.
+Configuración básica de endpoint.
+Envíos de manera local al endpoint de CliendUI.
 
 ## Demo02. Command Processing
-New project Sales appears, creating a new endpoint and managing commands sended by ClientUI
+Configuración de envío de comandos a un nuevo enpoint, Sales.
+Se crea un Handler en Sales para el procesado del comando.
 
 ## Demo03. Events Processing
-Billig and Shipping subscribes to events from Sales. Additionally Shipping subscribes to events sended by Billing.
+Se agregan dos nuevos servicios, Billing y Shipping.
+Ambos implementan handlers para manajear eventos.
 
 ## Demo04. Trobleshotting
-bla bla bla
+Se introducen dos tipos de error en el servicio de Sales.
+Un error sistémico que nos va a permitir verificar todos los tipos de reitentos que se realizan hasta que el error es movido a una cola de error.
+Un error random para comprobar como los inmediates retres solucionan el problema.
 
 ## Demo05. Sagas
-bla bla bla
+Se introduce el concepto Saga.
+La implementación de la misma se realiza en el servicio de Shipping, que es quien considera la saga terminada cuando recive eventos de Sales y de Billing.
