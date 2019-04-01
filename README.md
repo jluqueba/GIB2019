@@ -8,7 +8,7 @@ Includes basic configuratoion and send local commands.
 New project Sales appears, creating a new endpoint and managing commands sended by ClientUI
 
 ## Demo03. Events Processing
-Two more projects: Billing and Shipping, both managing events from Sales projects.
+Billig and Shipping subscribes to events from Sales. Additionally Shipping subscribes to events sended by Billing.
 
 ## Demo04. Trobleshotting
 bla bla bla
